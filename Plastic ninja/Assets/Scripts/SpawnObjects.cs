@@ -11,17 +11,16 @@ public class SpawnObjects : MonoBehaviour {
     public static int spawnTime;
 	void Start () {
         counter = 0;
-        spawnTime = 30;
         randObject = 0;
     }
 	
 	// Update is called once per frame
 	void Update () {
         //GameManager.level;
-      
+        Debug.Log(spawnTime);
         if (counter > spawnTime)
         {
-            Debug.Log("x : " + transform.position.x + " y " + transform.position.y);
+         //   Debug.Log("x : " + transform.position.x + " y " + transform.position.y);
             randObject = Random.Range(0, 3);
             //Objetos que se spawnean;
             Instantiate(spawn[randObject], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);

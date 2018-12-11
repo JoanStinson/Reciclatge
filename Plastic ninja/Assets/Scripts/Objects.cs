@@ -55,7 +55,7 @@ public class Objects : MonoBehaviour
                 RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
                 if (hit.collider != null)
                 {
-                    Debug.Log("Hiteado:" + hit.collider.gameObject.name);
+                 //   Debug.Log("Hiteado:" + hit.collider.gameObject.name);
                     if (hit.collider.tag == "Vidrio")
                     {
                         PointsUI.pointss += 5;
@@ -65,7 +65,7 @@ public class Objects : MonoBehaviour
                     else
                     {
                         PointsUI.pointss -= 5;
-                        Debug.Log("Restar puntos");
+                    //    Debug.Log("Restar puntos");
                         Destroy(hit.collider.gameObject);
                     }
 
@@ -86,14 +86,14 @@ public class Objects : MonoBehaviour
                     {
                         PointsUI.pointss += 5;
                         Destroy(hit.collider.gameObject);
-                        Debug.Log(hit.collider.gameObject.name);
+                     //   Debug.Log(hit.collider.gameObject.name);
                         //SUMAR PUTNOS 
                     }
                     else
                     {
                         Destroy(hit.collider.gameObject);
                         //RESTAR PUNTOS
-                        Debug.Log("Restar puntos");
+                    //    Debug.Log("Restar puntos");
                     }
 
                 }
@@ -113,12 +113,12 @@ public class Objects : MonoBehaviour
                     {
                         PointsUI.pointss += 5;
                         Destroy(hit.collider.gameObject);
-                        Debug.Log(hit.collider.gameObject.name);
+                    //    Debug.Log(hit.collider.gameObject.name);
                     }
                     else
                     {
                         Destroy(hit.collider.gameObject);
-                        Debug.Log("Restar puntos");
+                  //      Debug.Log("Restar puntos");
                     }
 
                 }
