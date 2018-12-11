@@ -7,12 +7,13 @@ public class Game : MonoBehaviour {
     public static int level;
     public static int contenedor;
     public enum CONTENEDOR { Vidrio, Plastico, Carton , Organic, }
+    public static int pointss;
     // Use this for initialization 
-   public static CONTENEDOR contain;
+    public static CONTENEDOR contain;
       void Start () {
 
         level = 1; //SE ELIGE EN EL MENU!!
-
+        pointss = 0; //SE ESCRIBE EN EL MENU XD
     }
 	
 	// Update is called once per frame

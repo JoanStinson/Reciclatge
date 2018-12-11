@@ -22,8 +22,6 @@ public class Objects : MonoBehaviour
         randVX = Random.Range(-5, 5);
         TimeCounter = 0;
 
-
-
     }
 
     // Update is called once per frame
@@ -58,13 +56,13 @@ public class Objects : MonoBehaviour
                  //   Debug.Log("Hiteado:" + hit.collider.gameObject.name);
                     if (hit.collider.tag == "Vidrio")
                     {
-                        PointsUI.pointss += 5;
+                        Game.pointss += 5;
                        
                         Destroy(hit.collider.gameObject);
                     }
                     else
                     {
-                        PointsUI.pointss -= 5;
+                        Game.pointss -= 5;
                     //    Debug.Log("Restar puntos");
                         Destroy(hit.collider.gameObject);
                     }
@@ -84,7 +82,7 @@ public class Objects : MonoBehaviour
                 {
                     if (hit.collider.tag == "Plastico")
                     {
-                        PointsUI.pointss += 5;
+                        Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                      //   Debug.Log(hit.collider.gameObject.name);
                         //SUMAR PUTNOS 
@@ -111,7 +109,7 @@ public class Objects : MonoBehaviour
                 {
                     if (hit.collider.tag == "Carton")
                     {
-                        PointsUI.pointss += 5;
+                        Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                     //    Debug.Log(hit.collider.gameObject.name);
                     }
