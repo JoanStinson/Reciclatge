@@ -30,8 +30,8 @@ public class Objects : MonoBehaviour
     void Update()
     {
         rb.transform.position = new Vector2(randVX, transform.position.y);
-        randTime = Random.Range(15, 30);
-        transform.Rotate(Vector3.forward * rand);
+        randTime = Random.Range(20, 30);
+     transform.Rotate(Vector3.forward * rand);
         rb.gravityScale = -1.2f;
 
         if(TimeCounter > randTime)
