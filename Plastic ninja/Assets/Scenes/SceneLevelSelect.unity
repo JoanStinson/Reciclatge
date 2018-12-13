@@ -441,6 +441,7 @@ GameObject:
   - component: {fileID: 823033449}
   - component: {fileID: 823033454}
   - component: {fileID: 823033453}
+  - component: {fileID: 823033455}
   m_Layer: 5
   m_Name: Level4
   m_TagString: Untagged
@@ -456,14 +457,14 @@ RectTransform:
   m_GameObject: {fileID: 823033447}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000077, y: 1.0000077, z: 1.0000077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 732354682}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -73.3, y: 60}
+  m_AnchoredPosition: {x: -144, y: 35}
   m_SizeDelta: {x: 146.6, y: 158.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &823033449
@@ -710,6 +711,20 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!111 &823033455
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 823033447}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 3c7088521e7a7a840a6f68b6d6f9bd1e, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1019314780
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +735,7 @@ GameObject:
   - component: {fileID: 1019314781}
   - component: {fileID: 1019314783}
   - component: {fileID: 1019314782}
+  - component: {fileID: 1019314784}
   m_Layer: 5
   m_Name: TitleBg
   m_TagString: Untagged
@@ -780,6 +796,21 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1019314780}
   m_CullTransparentMesh: 0
+--- !u!111 &1019314784
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1019314780}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 8e9da00a41358c14f9c48edfd3108bad, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 8e9da00a41358c14f9c48edfd3108bad, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1134516996
 GameObject:
   m_ObjectHideFlags: 0
@@ -794,6 +825,7 @@ GameObject:
   - component: {fileID: 1134516998}
   - component: {fileID: 1134517003}
   - component: {fileID: 1134517002}
+  - component: {fileID: 1134517004}
   m_Layer: 5
   m_Name: Level2
   m_TagString: Untagged
@@ -809,7 +841,7 @@ RectTransform:
   m_GameObject: {fileID: 1134516996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000077, y: 1.0000077, z: 1.0000077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 732354682}
   m_RootOrder: 3
@@ -1063,6 +1095,21 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!111 &1134517004
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1134516996}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 65e10973143ef2546913c042079495a6, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 65e10973143ef2546913c042079495a6, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1209314543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1077,6 +1124,7 @@ GameObject:
   - component: {fileID: 1209314545}
   - component: {fileID: 1209314550}
   - component: {fileID: 1209314549}
+  - component: {fileID: 1209314551}
   m_Layer: 5
   m_Name: Level3
   m_TagString: Untagged
@@ -1092,14 +1140,14 @@ RectTransform:
   m_GameObject: {fileID: 1209314543}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000077, y: 1.0000077, z: 1.0000077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 732354682}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 171, y: 19.7}
+  m_AnchoredPosition: {x: 124, y: 35}
   m_SizeDelta: {x: 146.6, y: 158.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1209314545
@@ -1346,6 +1394,20 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!111 &1209314551
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1209314543}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 10a0be9182addd049beffa8fed3f2b27, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1479713090
 GameObject:
   m_ObjectHideFlags: 0
@@ -1566,6 +1628,7 @@ GameObject:
   - component: {fileID: 1974949122}
   - component: {fileID: 1974949127}
   - component: {fileID: 1974949126}
+  - component: {fileID: 1974949128}
   m_Layer: 5
   m_Name: Level5
   m_TagString: Untagged
@@ -1581,14 +1644,14 @@ RectTransform:
   m_GameObject: {fileID: 1974949120}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0000077, y: 1.0000077, z: 1.0000077}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 732354682}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -322, y: -139}
+  m_AnchoredPosition: {x: -347, y: -146}
   m_SizeDelta: {x: 146.6, y: 158.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974949122
@@ -1835,6 +1898,20 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!111 &1974949128
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974949120}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 1bff8c7475a088944a618e3e62af79b4, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &2046974018
 GameObject:
   m_ObjectHideFlags: 0
@@ -1849,6 +1926,7 @@ GameObject:
   - component: {fileID: 2046974020}
   - component: {fileID: 2046974025}
   - component: {fileID: 2046974024}
+  - component: {fileID: 2046974026}
   m_Layer: 5
   m_Name: Level1
   m_TagString: Untagged
@@ -2118,3 +2196,18 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!111 &2046974026
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2046974018}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 4486009c7ee9475438c9bad3bc981ba1, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 4486009c7ee9475438c9bad3bc981ba1, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
