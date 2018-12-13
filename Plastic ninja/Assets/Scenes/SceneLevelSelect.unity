@@ -720,7 +720,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 3c7088521e7a7a840a6f68b6d6f9bd1e, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: 3c7088521e7a7a840a6f68b6d6f9bd1e, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -1403,7 +1404,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 10a0be9182addd049beffa8fed3f2b27, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: 10a0be9182addd049beffa8fed3f2b27, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
@@ -1532,9 +1534,9 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 7889f37a2b9dff54484ca0e1cbba2e87, type: 3}
     m_FontSize: 90
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 9
     m_MaxSize: 90
@@ -1907,7 +1909,8 @@ Animation:
   m_Enabled: 1
   serializedVersion: 3
   m_Animation: {fileID: 7400000, guid: 1bff8c7475a088944a618e3e62af79b4, type: 2}
-  m_Animations: []
+  m_Animations:
+  - {fileID: 7400000, guid: 1bff8c7475a088944a618e3e62af79b4, type: 2}
   m_WrapMode: 0
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0

@@ -8,30 +8,29 @@ public class Game : MonoBehaviour {
     public static int contenedor;
     public enum CONTENEDOR { Vidrio, Plastico, Carton , Organic, }
     public static int pointss;
-    // Use this for initialization 
     public static CONTENEDOR contain;
-      void Start () {
 
+    private void Start () {
         level = 1; //SE ELIGE EN EL MENU!!
         pointss = 0; //SE ESCRIBE EN EL MENU XD
     }
 	
-	// Update is called once per frame
-	void Update () {
+	private void Update () {
        //Debug.Log(contain);
-       switch(level)
-        {
+
+       switch(level) {
+
             case 1:
                 contain = CONTENEDOR.Vidrio;
-                SpawnObjects.spawnTime = 30; //SE PUEDE CAMBIAR SEGUN LA DIFICULTAD QUE QUERRAMOS METER!! TIEMPO DE SPAWN ENTRE OBJETOS
+                SpawnObjects.spawnTime = 1f; //SE PUEDE CAMBIAR SEGUN LA DIFICULTAD QUE QUERRAMOS METER!! TIEMPO DE SPAWN ENTRE OBJETOS
                 break;
             case 2:
                 contain = CONTENEDOR.Plastico;
-                SpawnObjects.spawnTime = 50;
+                SpawnObjects.spawnTime = 5f;
                 break;
             case 3:
                 contain = CONTENEDOR.Carton;
-                SpawnObjects.spawnTime = 50;
+                SpawnObjects.spawnTime = 5f;
                 break;
         }
     }
