@@ -51,7 +51,7 @@ public class SpawnObjects : MonoBehaviour {
                     counter += Time.deltaTime;
                 }
 
-            if (CounterElement == 3) { //TODO cambiar
+            if (CounterElement == 10) { //TODO cambiar
 
                 if (Game.pointss > maxPoints) {
                     maxPoints = Game.pointss;
