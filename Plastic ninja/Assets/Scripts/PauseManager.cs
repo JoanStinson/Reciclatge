@@ -7,6 +7,7 @@ public class PauseManager : MonoBehaviour {
 
     private static bool isPause;
     public GameObject pausePanel;
+    public GameObject gameEndPanel;
 
 	private void Update () {
 		Time.timeScale = isPause ? 0 : 1;
@@ -22,16 +23,19 @@ public class PauseManager : MonoBehaviour {
     }
 
     public void Restart() {
+        gameEndPanel.SetActive(false);
         isPause = false;
         SceneManager.LoadScene(2);
     }
 
     public void LevelSelect() {
+        gameEndPanel.SetActive(false);
         isPause = false;
         SceneManager.LoadScene(1);
     }
 
     public void MainMenu() {
+        gameEndPanel.SetActive(false);
         isPause = false;
         SceneManager.LoadScene(0);
     }

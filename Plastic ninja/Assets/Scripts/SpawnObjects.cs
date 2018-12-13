@@ -13,6 +13,7 @@ public class SpawnObjects : MonoBehaviour {
     public int maxElement;
     public int maxPoints;
     public int points;
+    public GameObject gameEndPanel;
 
     private void Start() {
         counter = 0;
@@ -50,14 +51,15 @@ public class SpawnObjects : MonoBehaviour {
                     counter += Time.deltaTime;
                 }
 
-            if (CounterElement == 20) {
+            if (CounterElement == 3) { //TODO cambiar
 
                 if (Game.pointss > maxPoints) {
                     maxPoints = Game.pointss;
                     PlayerPrefs.SetInt("Level1MAX", Game.pointss);
                 }
 
-                SceneManager.LoadScene(3);
+                // Game end
+                gameEndPanel.SetActive(true);
             }
             break;
         }
