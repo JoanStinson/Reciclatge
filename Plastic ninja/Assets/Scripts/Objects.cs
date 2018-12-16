@@ -84,8 +84,9 @@ public class Objects : MonoBehaviour {
                     }
                     else {
                         Destroy(hit.collider.gameObject);
+                        Game.pointss -= 5;
                         //RESTAR PUNTOS
-                    //    Debug.Log("Restar puntos");
+                        //    Debug.Log("Restar puntos");
                     }
 
                 }
@@ -109,7 +110,37 @@ public class Objects : MonoBehaviour {
                     }
                     else {
                         Destroy(hit.collider.gameObject);
-                  //      Debug.Log("Restar puntos");
+                        Game.pointss -= 5;
+                        //      Debug.Log("Restar puntos");
+                    }
+
+                }
+            }
+        }
+        else if (container == Game.CONTENEDOR.Organic)
+        {
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+                RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+
+                if (hit.collider != null)
+                {
+
+                    if (hit.collider.tag == "Organic")
+                    {
+                        Game.pointss += 5;
+                        Destroy(hit.collider.gameObject);
+                        //    Debug.Log(hit.collider.gameObject.name);
+                    }
+                    else
+                    {
+                        Destroy(hit.collider.gameObject);
+                        Game.pointss -= 5;
+                        //      Debug.Log("Restar puntos");
                     }
 
                 }

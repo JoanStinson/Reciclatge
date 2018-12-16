@@ -31,6 +31,21 @@ public class PauseManager : MonoBehaviour {
     public void LevelSelect() {
         gameEndPanel.SetActive(false);
         isPause = false;
+        switch(Game.level)
+        {
+            case 1:
+            Game.contain = Game.CONTENEDOR.Vidrio;
+            SpawnObjects.spawnTime = 1f; //SE PUEDE CAMBIAR SEGUN LA DIFICULTAD QUE QUERRAMOS METER!! TIEMPO DE SPAWN ENTRE OBJETOS
+                break;
+            case 2:
+                Game.contain = Game.CONTENEDOR.Plastico;
+                SpawnObjects.spawnTime = 1f;
+                break;
+            case 3:
+                Game.contain = Game.CONTENEDOR.Carton;
+                SpawnObjects.spawnTime = 1f;
+                break;
+        }
         SceneManager.LoadScene(1);
     }
 

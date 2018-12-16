@@ -6,7 +6,8 @@ public class DestroyObject : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision) {
 
-        if (collision.gameObject.tag == "Vidrio" || collision.gameObject.tag == "Carton" || collision.gameObject.tag == "Plastico") {
+        if (collision.gameObject.tag == "Vidrio" || collision.gameObject.tag == "Carton" || collision.gameObject.tag == "Plastico"
+            || collision.gameObject.tag == "Organic") {
             //Debug.Log("hi");
             Destroy(collision.gameObject);
         }
