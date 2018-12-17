@@ -2803,7 +2803,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 17cb1bf1cae3872478a380c5e1f342d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  img: {fileID: 0}
 --- !u!4 &942237882
 Transform:
   m_ObjectHideFlags: 0
@@ -4385,6 +4384,21 @@ MonoBehaviour:
   - {fileID: 914477490741383726, guid: d35f0707384c89f4b8f663f5274b2734, type: 3}
   - {fileID: 6065979168705586735, guid: 3f845cbc633ece44287ce282afb38d82, type: 3}
   - {fileID: 8631825589096194552, guid: f557767b85689aa4dbda4564f0e2d6c1, type: 3}
+  - {fileID: 836935007, guid: 433a7595594f79b458b89436dc558218, type: 3}
+  OrganicSpawn:
+  - {fileID: 8498119675943638186, guid: 2c97b819ebfbab34b939cbf20dbba644, type: 3}
+  - {fileID: 1903846264834977303, guid: a434fa1cccb8ed142862f7abe681ff88, type: 3}
+  - {fileID: 1242590500295938376, guid: 7622d013f00fab348a952f18619c91a1, type: 3}
+  - {fileID: 5573871395518640860, guid: a1dd9147cf355574baa2f23d6030eae8, type: 3}
+  - {fileID: 8202785035575595673, guid: c60e7308ded9a364eac7e4256c82e2e2, type: 3}
+  GeneralSpawn:
+  - {fileID: 1523514615882515705, guid: 201d5e2d18a939e4889d293ef79e7037, type: 3}
+  - {fileID: 6962479248935402022, guid: f5deeb1b3ff8eb343a654e8575e0e95b, type: 3}
+  - {fileID: 7231304503405942309, guid: ce98ec259b49e6847a8ae3ffbd6d7d17, type: 3}
+  - {fileID: 2389409816689009839, guid: 1b8255f6c0edeb74a914293c8e5d16b0, type: 3}
+  - {fileID: 4599852359156423216, guid: c85f634e87db0a647a528766aa1baf14, type: 3}
+  - {fileID: 4314014896711632174, guid: 3a5c134086dc85749ba14e85a4cf2238, type: 3}
+  - {fileID: 5361878425155966904, guid: 4f9f700abc74e314780efcda40195a3a, type: 3}
 --- !u!1 &1997517053
 GameObject:
   m_ObjectHideFlags: 0

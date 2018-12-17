@@ -24,6 +24,9 @@ public class EndScene : MonoBehaviour {
             case 4:
                 points = PlayerPrefs.GetInt("Level4MAX");
                 break;
+            case 5:
+                points = PlayerPrefs.GetInt("Level5MAX");
+                break;
         }
     }
 
@@ -121,6 +124,30 @@ public class EndScene : MonoBehaviour {
                     medalGold.SetActive(false);
                     medalSilver.SetActive(false);
                     PlayerPrefs.SetInt("Level4Medals", 1);
+                }
+                break;
+            case 5:
+                GotPoints.text = "HIGSCHORE: " + points.ToString();
+                if (points >= 35)
+                {
+                    medalBronze.SetActive(true);
+                    medalGold.SetActive(true);
+                    medalSilver.SetActive(true);
+                    PlayerPrefs.SetInt("Level5Medals", 3);
+                }
+                if (points >= 15 && points < 35)
+                {
+                    medalBronze.SetActive(true);
+                    medalGold.SetActive(false);
+                    medalSilver.SetActive(true);
+                    PlayerPrefs.SetInt("Level5Medals", 2);
+                }
+                if (points < 0 && points <= 15)
+                {
+                    medalBronze.SetActive(true);
+                    medalGold.SetActive(false);
+                    medalSilver.SetActive(false);
+                    PlayerPrefs.SetInt("Level5Medals", 1);
                 }
                 break;
         }

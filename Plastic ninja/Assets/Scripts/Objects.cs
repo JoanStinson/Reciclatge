@@ -19,7 +19,7 @@ public class Objects : MonoBehaviour {
             rand = Random.Range(-7, 7);
         }
 
-        randVX = Random.Range(-5, 5);
+        randVX = Random.Range(-9, 9);
         TimeCounter = 0;
 
     }
@@ -131,6 +131,35 @@ public class Objects : MonoBehaviour {
                 {
 
                     if (hit.collider.tag == "Organic")
+                    {
+                        Game.pointss += 5;
+                        Destroy(hit.collider.gameObject);
+                        //    Debug.Log(hit.collider.gameObject.name);
+                    }
+                    else
+                    {
+                        Destroy(hit.collider.gameObject);
+                        Game.pointss -= 5;
+                        //      Debug.Log("Restar puntos");
+                    }
+
+                }
+            }
+        }
+        else if (container == Game.CONTENEDOR.General)
+        {
+
+            if (Input.GetMouseButtonDown(0))
+            {
+                Vector3 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                Vector2 mousePos2D = new Vector2(mousePos.x, mousePos.y);
+
+                RaycastHit2D hit = Physics2D.Raycast(mousePos2D, Vector2.zero);
+
+                if (hit.collider != null)
+                {
+
+                    if (hit.collider.tag == "General")
                     {
                         Game.pointss += 5;
                         Destroy(hit.collider.gameObject);

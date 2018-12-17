@@ -6,7 +6,7 @@ public class Game : MonoBehaviour {
    
     public static int level;
     public static int contenedor;
-    public enum CONTENEDOR { Vidrio, Plastico, Carton , Organic, }
+    public enum CONTENEDOR { Vidrio, Plastico, Carton , Organic, General }
     public static int pointss;
     public static CONTENEDOR contain;
     private void Start () {
@@ -33,6 +33,10 @@ public class Game : MonoBehaviour {
                 break;
             case 4:
                 contain = CONTENEDOR.Organic;
+                SpawnObjects.spawnTime = 1.6f;
+                break;
+            case 5:
+                contain = CONTENEDOR.General;
                 SpawnObjects.spawnTime = 1.6f;
                 break;
         }

@@ -19,6 +19,8 @@ public class SpawnObjects : MonoBehaviour {
     public GameObject[] vidrioSpawn;
     public GameObject[] PlasticSpawn;
     public GameObject[] CartonSpawn;
+    public GameObject[] OrganicSpawn;
+    public GameObject[] GeneralSpawn;
     private void Start() {
 
     counter = 0;
@@ -42,6 +44,10 @@ public class SpawnObjects : MonoBehaviour {
                 CounterElement = 0;
                 maxElement = 100;
                 break;
+            case 5:
+                CounterElement = 0;
+                maxElement = 100;
+                break;
         }
 
     }
@@ -60,7 +66,7 @@ public class SpawnObjects : MonoBehaviour {
                     if (counter > spawnTime)
                     {
 
-                        randObject = Random.Range(0, 4);
+                        randObject = Random.Range(0, 5);
                         // Objetos que se spawnean
                         Debug.Log("OBJ Fuera random " +  randObject);
                         if(randObject == 0)
@@ -83,18 +89,29 @@ public class SpawnObjects : MonoBehaviour {
                         }
                         if (randObject == 2)
                         {
-                            randElement = Random.Range(0, 4);
+                            randElement = Random.Range(0, 5);
                             Debug.Log("CARTON SPAWNED");
                             Debug.Log("OBJ: " + randObject + "PLASTIC SPAWNED " + randElement);
                             GameObject Instantiated = Instantiate(CartonSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
                         }
-                        if (randObject > 2)
+                        if (randObject == 3)
                         {
-                            GameObject Instantiated = Instantiate(spawn[randObject], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                            randElement = Random.Range(0, 5);
+                            Debug.Log("ORGANIC SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "ORGANIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(OrganicSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
                         }
-                       
-
-                       
+                        if (randObject == 4)
+                        {
+                            randElement = Random.Range(0, 7);
+                            Debug.Log("GRIS SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "GRIS SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(GeneralSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                        }
+                        if (randObject > 4)
+                        {
+                            Debug.Log("ERROR");
+                        }
                         counter = 0;
                     }
                     else
@@ -149,14 +166,28 @@ public class SpawnObjects : MonoBehaviour {
                         }
                         if (randObject == 2)
                         {
-                            randElement = Random.Range(0, 4);
+                            randElement = Random.Range(0, 5);
                             Debug.Log("CARTON SPAWNED");
                             Debug.Log("OBJ: " + randObject + "PLASTIC SPAWNED " + randElement);
                             GameObject Instantiated = Instantiate(CartonSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
                         }
-                        if (randObject > 2)
+                        if (randObject == 3)
                         {
-                            GameObject Instantiated = Instantiate(spawn[randObject], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                            randElement = Random.Range(0, 5);
+                            Debug.Log("ORGANIC SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "ORGANIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(OrganicSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                        }
+                        if (randObject == 4)
+                        {
+                            randElement = Random.Range(0, 7);
+                            Debug.Log("GRIS SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "GRIS SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(GeneralSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                        }
+                        if (randObject > 4)
+                        {
+                            Debug.Log("ERROR");
                         }
                         counter = 0;
                     }
@@ -210,7 +241,7 @@ public class SpawnObjects : MonoBehaviour {
                         }
                         if(randObject == 2)
                         {
-                            randElement = Random.Range(0, 4);
+                            randElement = Random.Range(0, 5);
                             Debug.Log("CARTON SPAWNED");
                             Debug.Log("OBJ: " + randObject + "PLASTIC SPAWNED " + randElement);
                             GameObject Instantiated = Instantiate(CartonSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
@@ -220,9 +251,23 @@ public class SpawnObjects : MonoBehaviour {
                             }
 
                         }
-                        if (randObject > 2)
+                        if (randObject == 3)
                         {
-                            GameObject Instantiated = Instantiate(spawn[randObject], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                            randElement = Random.Range(0, 5);
+                            Debug.Log("ORGANIC SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "ORGANIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(OrganicSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                        }
+                        if (randObject == 4)
+                        {
+                            randElement = Random.Range(0, 7);
+                            Debug.Log("GRIS SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "GRIS SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(GeneralSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                        }
+                        if (randObject > 4)
+                        {
+                            Debug.Log("ERROR");
                         }
                         counter = 0;
                     }
@@ -257,12 +302,53 @@ public class SpawnObjects : MonoBehaviour {
                     {
 
                         randObject = Random.Range(0, 4);
-                        // Objetos que se spawnean
-                        GameObject Instantiated = Instantiate(spawn[randObject], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-
-                        if (Instantiated.tag == "Organic")
+                        Debug.Log("OBJ Fuera random " + randObject);
+                        if (randObject == 0)
                         {
-                            CounterElement += 1;
+                            randElement = Random.Range(0, 6);
+                            Debug.Log("VIDRIO SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "VIDRIO SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(vidrioSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
+                        }
+                        if (randObject == 1)
+                        {
+                            randElement = Random.Range(0, 6);
+                            Debug.Log("PLASTIC SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "PLASTIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(PlasticSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
+                        }
+                        if (randObject == 2)
+                        {
+                            randElement = Random.Range(0, 5);
+                            Debug.Log("CARTON SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "PLASTIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(CartonSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                          
+
+                        }
+                        if (randObject == 3)
+                        {
+                            randElement = Random.Range(0, 5);
+                            Debug.Log("ORGANIC SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "ORGANIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(OrganicSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                            if (Instantiated.tag == "Organic")
+                            {
+                                CounterElement += 1;
+                            }
+                        }
+                        if (randObject == 4)
+                        {
+                            randElement = Random.Range(0, 7);
+                            Debug.Log("GRIS SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "GRIS SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(GeneralSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                        }
+                        if (randObject > 4)
+                        {
+                            Debug.Log("ERROR");
                         }
                         counter = 0;
                     }
@@ -287,6 +373,89 @@ public class SpawnObjects : MonoBehaviour {
                     gameEndPanel.SetActive(true);
                 }
                 break;
+            case 5:
+                if (CounterElement < 10)
+                {
+                    maxPoints = PlayerPrefs.GetInt("Level5MAX");
+                    //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
+                    textHighScore.text = maxPoints.ToString();
+                    if (counter > spawnTime)
+                    {
+
+                        randObject = Random.Range(0, 4);
+                        Debug.Log("OBJ Fuera random " + randObject);
+                        if (randObject == 0)
+                        {
+                            randElement = Random.Range(0, 6);
+                            Debug.Log("VIDRIO SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "VIDRIO SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(vidrioSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
+                        }
+                        if (randObject == 1)
+                        {
+                            randElement = Random.Range(0, 6);
+                            Debug.Log("PLASTIC SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "PLASTIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(PlasticSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
+                        }
+                        if (randObject == 2)
+                        {
+                            randElement = Random.Range(0, 5);
+                            Debug.Log("CARTON SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "PLASTIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(CartonSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
+
+                        }
+                        if (randObject == 3)
+                        {
+                            randElement = Random.Range(0, 5);
+                            Debug.Log("ORGANIC SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "ORGANIC SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(OrganicSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                           
+                        }
+                        if (randObject == 4)
+                        {
+                            randElement = Random.Range(0, 7);
+                            Debug.Log("GRIS SPAWNED");
+                            Debug.Log("OBJ: " + randObject + "GRIS SPAWNED " + randElement);
+                            GameObject Instantiated = Instantiate(GeneralSpawn[randElement], new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                            if (Instantiated.tag == "General")
+                            {
+                                CounterElement += 1;
+                            }
+                        }
+                        if (randObject > 4)
+                        {
+                            Debug.Log("ERROR");
+                        }
+                        counter = 0;
+                    }
+                    else
+                    {
+                        counter += Time.deltaTime;
+                    }
+                }
+                if (CounterElement == 10)
+                { //TODO cambiar
+
+                    if (Game.pointss > maxPoints)
+                    {
+                        maxPoints = Game.pointss;
+                        PlayerPrefs.SetInt("Level5MAX", Game.pointss);
+                    }
+                    else
+                    {
+                        PlayerPrefs.SetInt("Level5MAX", maxPoints);
+                    }
+                    // Game end
+                    gameEndPanel.SetActive(true);
+                }
+                break;
+
         }
    
     }

@@ -45,6 +45,14 @@ public class PauseManager : MonoBehaviour {
                 Game.contain = Game.CONTENEDOR.Carton;
                 SpawnObjects.spawnTime = 1f;
                 break;
+            case 4:
+                Game.contain = Game.CONTENEDOR.Organic;
+                SpawnObjects.spawnTime = 1f;
+                break;
+            case 5:
+                Game.contain = Game.CONTENEDOR.General;
+                SpawnObjects.spawnTime = 1f;
+                break;
         }
         SceneManager.LoadScene(1);
     }

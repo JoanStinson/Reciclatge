@@ -9,6 +9,7 @@ TagManager:
   - Carton
   - DestroyZone
   - Organic
+  - General
   layers:
   - Default
   - TransparentFX
