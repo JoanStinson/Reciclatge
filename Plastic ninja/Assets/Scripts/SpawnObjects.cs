@@ -119,7 +119,7 @@ public class SpawnObjects : MonoBehaviour {
                         counter += Time.deltaTime;
                     }
                 }
-            if (CounterElement == 10) { //TODO cambiar
+            if (CounterElement == 20) { //TODO cambiar
 
                 if (Game.pointss > maxPoints) {
                     maxPoints = Game.pointss;
@@ -196,7 +196,7 @@ public class SpawnObjects : MonoBehaviour {
                         counter += Time.deltaTime;
                     }
                 }
-                if (CounterElement == 10)
+                if (CounterElement == 20)
                 { //TODO cambiar
 
                     if (Game.pointss > maxPoints)
@@ -276,7 +276,7 @@ public class SpawnObjects : MonoBehaviour {
                         counter += Time.deltaTime;
                     }
                 }
-                if (CounterElement == 10)
+                if (CounterElement == 25)
                 { //TODO cambiar
 
                     if (Game.pointss > maxPoints)
@@ -357,7 +357,7 @@ public class SpawnObjects : MonoBehaviour {
                         counter += Time.deltaTime;
                     }
                 }
-                if (CounterElement == 10)
+                if (CounterElement == 25)
                 { //TODO cambiar
 
                     if (Game.pointss > maxPoints)
@@ -439,7 +439,7 @@ public class SpawnObjects : MonoBehaviour {
                         counter += Time.deltaTime;
                     }
                 }
-                if (CounterElement == 10)
+                if (CounterElement == 25)
                 { //TODO cambiar
 
                     if (Game.pointss > maxPoints)

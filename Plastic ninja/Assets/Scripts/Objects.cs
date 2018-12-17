@@ -19,7 +19,7 @@ public class Objects : MonoBehaviour {
             rand = Random.Range(-7, 7);
         }
 
-        randVX = Random.Range(-9, 9);
+        randVX = Random.Range(-7, 9);
         TimeCounter = 0;
 
     }
