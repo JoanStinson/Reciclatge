@@ -58,7 +58,7 @@ public class SpawnObjects : MonoBehaviour {
         Debug.Log(CounterElement + " ELEMENTO: " + Game.contain);
         switch (Game.level) {
             case 1:
-                if (CounterElement < 10)
+                if (CounterElement < 20)
                 {
                     maxPoints = PlayerPrefs.GetInt("Level1MAX");
                     //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
@@ -134,7 +134,7 @@ public class SpawnObjects : MonoBehaviour {
             }
             break;
             case 2:
-                if (CounterElement < 10)
+                if (CounterElement < 20)
                 {
                     maxPoints = PlayerPrefs.GetInt("Level2MAX");
                     //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
@@ -213,7 +213,7 @@ public class SpawnObjects : MonoBehaviour {
                 }
                 break;
             case 3:
-                if (CounterElement < 10)
+                if (CounterElement < 25)
                 {
                     maxPoints = PlayerPrefs.GetInt("Level3MAX");
                     //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
@@ -293,7 +293,7 @@ public class SpawnObjects : MonoBehaviour {
                 }
                 break;
             case 4:
-                if (CounterElement < 10)
+                if (CounterElement < 25)
                 {
                     maxPoints = PlayerPrefs.GetInt("Level4MAX");
                     //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
