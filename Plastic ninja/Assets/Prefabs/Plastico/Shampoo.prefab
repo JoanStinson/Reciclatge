@@ -141,3 +141,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12ef67a35f57c1f41a2d2440a2ed4dc6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sumar: {fileID: 8373301214583021838, guid: 7f360410eeedb2a4f9723b76022142c2, type: 3}
+  restar: {fileID: 2270645215033653991, guid: 634fb6d7daa76684496055868f0775b8, type: 3}

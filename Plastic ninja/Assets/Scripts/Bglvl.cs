@@ -14,7 +14,7 @@ public class Bglvl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Game.level == 1)
+      /*  if (Game.level == 1)
         {
             cam.backgroundColor = Color.green;
         }
@@ -33,6 +33,6 @@ public class Bglvl : MonoBehaviour
         if (Game.level == 5)
         {
             cam.backgroundColor = Color.gray;
-        }
+        }*/
     }
 }

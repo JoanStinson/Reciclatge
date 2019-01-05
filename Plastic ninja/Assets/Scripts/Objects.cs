@@ -12,6 +12,8 @@ public class Objects : MonoBehaviour {
     float randTime;
     float TimeCounter;
 
+    public GameObject sumar;
+    public GameObject restar;
     private void Start() {
         rb = transform.GetComponent<Rigidbody2D>();
 
@@ -53,10 +55,15 @@ public class Objects : MonoBehaviour {
                  //   Debug.Log("Hiteado:" + hit.collider.gameObject.name);
 
                     if (hit.collider.tag == "Vidrio") {
+                        GameObject Instantiated = Instantiate(sumar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+                      
                         Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                     }
-                    else {
+                    else
+                    {
+                        GameObject Instantiated = Instantiate(restar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Game.pointss -= 5;
                     //    Debug.Log("Restar puntos");
                         Destroy(hit.collider.gameObject);
@@ -76,13 +83,19 @@ public class Objects : MonoBehaviour {
 
                 if (hit.collider != null) {
 
-                    if (hit.collider.tag == "Plastico") {
+                    if (hit.collider.tag == "Plastico")
+                    {
+                        GameObject Instantiated = Instantiate(sumar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                      //   Debug.Log(hit.collider.gameObject.name);
                         //SUMAR PUTNOS 
                     }
-                    else {
+                    else
+                    {
+                        GameObject Instantiated = Instantiate(restar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Destroy(hit.collider.gameObject);
                         Game.pointss -= 5;
                         //RESTAR PUNTOS
@@ -103,12 +116,18 @@ public class Objects : MonoBehaviour {
 
                 if (hit.collider != null) {
 
-                    if (hit.collider.tag == "Carton") {
+                    if (hit.collider.tag == "Carton")
+                    {
+                        GameObject Instantiated = Instantiate(sumar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                     //    Debug.Log(hit.collider.gameObject.name);
                     }
-                    else {
+                    else
+                    {
+                        GameObject Instantiated = Instantiate(restar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Destroy(hit.collider.gameObject);
                         Game.pointss -= 5;
                         //      Debug.Log("Restar puntos");
@@ -132,12 +151,16 @@ public class Objects : MonoBehaviour {
 
                     if (hit.collider.tag == "Organic")
                     {
+                        GameObject Instantiated = Instantiate(sumar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                         //    Debug.Log(hit.collider.gameObject.name);
                     }
                     else
                     {
+                        GameObject Instantiated = Instantiate(restar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Destroy(hit.collider.gameObject);
                         Game.pointss -= 5;
                         //      Debug.Log("Restar puntos");
@@ -161,12 +184,16 @@ public class Objects : MonoBehaviour {
 
                     if (hit.collider.tag == "General")
                     {
+                        GameObject Instantiated = Instantiate(sumar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                         //    Debug.Log(hit.collider.gameObject.name);
                     }
                     else
                     {
+                        GameObject Instantiated = Instantiate(restar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
+
                         Destroy(hit.collider.gameObject);
                         Game.pointss -= 5;
                         //      Debug.Log("Restar puntos");
