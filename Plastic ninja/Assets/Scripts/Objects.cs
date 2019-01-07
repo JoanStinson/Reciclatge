@@ -56,14 +56,12 @@ public class Objects : MonoBehaviour {
 
                     if (hit.collider.tag == "Vidrio") {
                         GameObject Instantiated = Instantiate(sumar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-                      
                         Game.pointss += 5;
                         Destroy(hit.collider.gameObject);
                     }
                     else
                     {
                         GameObject Instantiated = Instantiate(restar, new Vector2(this.transform.position.x, this.transform.position.y), Quaternion.identity);
-
                         Game.pointss -= 5;
                     //    Debug.Log("Restar puntos");
                         Destroy(hit.collider.gameObject);
