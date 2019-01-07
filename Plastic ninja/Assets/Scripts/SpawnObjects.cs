@@ -64,7 +64,7 @@ public class SpawnObjects : MonoBehaviour {
                     {
                         maxPoints = PlayerPrefs.GetInt("Level1MAX");
                         //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
-                        textHighScore.text = maxPoints.ToString();
+                        textHighScore.text = "HIGHSCORE " +maxPoints.ToString();
                         if (counter > spawnTime)
                         {
 
@@ -142,7 +142,7 @@ public class SpawnObjects : MonoBehaviour {
                     {
                         maxPoints = PlayerPrefs.GetInt("Level2MAX");
                         //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
-                        textHighScore.text = maxPoints.ToString();
+                        textHighScore.text = "HIGHSCORE " + maxPoints.ToString();
                         if (counter > spawnTime)
                         {
 
@@ -217,11 +217,11 @@ public class SpawnObjects : MonoBehaviour {
                     }
                     break;
                 case 3:
-                    if (CounterElement < 25)
+                    if (CounterElement < 20)
                     {
                         maxPoints = PlayerPrefs.GetInt("Level3MAX");
                         //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
-                        textHighScore.text = maxPoints.ToString();
+                        textHighScore.text = "HIGHSCORE " + maxPoints.ToString();
                         if (counter > spawnTime)
                         {
 
@@ -280,7 +280,7 @@ public class SpawnObjects : MonoBehaviour {
                             counter += Time.deltaTime;
                         }
                     }
-                    if (CounterElement == 25)
+                    if (CounterElement == 20)
                     { //TODO cambiar
 
                         if (Game.pointss > maxPoints)
@@ -297,11 +297,11 @@ public class SpawnObjects : MonoBehaviour {
                     }
                     break;
                 case 4:
-                    if (CounterElement < 25)
+                    if (CounterElement < 20)
                     {
                         maxPoints = PlayerPrefs.GetInt("Level4MAX");
                         //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
-                        textHighScore.text = maxPoints.ToString();
+                        textHighScore.text = "HIGHSCORE " + maxPoints.ToString();
                         if (counter > spawnTime)
                         {
 
@@ -361,7 +361,7 @@ public class SpawnObjects : MonoBehaviour {
                             counter += Time.deltaTime;
                         }
                     }
-                    if (CounterElement == 25)
+                    if (CounterElement == 20)
                     { //TODO cambiar
 
                         if (Game.pointss > maxPoints)
@@ -378,11 +378,11 @@ public class SpawnObjects : MonoBehaviour {
                     }
                     break;
                 case 5:
-                    if (CounterElement < 10)
+                    if (CounterElement < 20)
                     {
                         maxPoints = PlayerPrefs.GetInt("Level5MAX");
                         //Debug.Log("MAX"+PlayerPrefs.GetInt("Level1MAX"));
-                        textHighScore.text = maxPoints.ToString();
+                        textHighScore.text = "HIGHSCORE " + maxPoints.ToString();
                         if (counter > spawnTime)
                         {
 
@@ -443,7 +443,7 @@ public class SpawnObjects : MonoBehaviour {
                             counter += Time.deltaTime;
                         }
                     }
-                    if (CounterElement == 25)
+                    if (CounterElement == 20)
                     { //TODO cambiar
 
                         if (Game.pointss > maxPoints)

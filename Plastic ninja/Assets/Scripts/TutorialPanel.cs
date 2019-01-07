@@ -10,6 +10,7 @@ public class TutorialPanel : MonoBehaviour
     public GameObject organicPanel;
     public GameObject grisPanel;
     public static bool gameStart;
+    public GameObject tutorialPanel;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,8 +18,8 @@ public class TutorialPanel : MonoBehaviour
 
         if (Game.level == 1)
         {
-
-            GlassPanel.gameObject.SetActive(true);
+            tutorialPanel.gameObject.SetActive(true);
+            GlassPanel.gameObject.SetActive(false);
             cartonPanel.gameObject.SetActive(false);
             plasticPanel.gameObject.SetActive(false);
             organicPanel.gameObject.SetActive(false);
@@ -26,6 +27,7 @@ public class TutorialPanel : MonoBehaviour
         }
         if (Game.level == 2)
         {
+            tutorialPanel.gameObject.SetActive(false);
             GlassPanel.gameObject.SetActive(false);
             cartonPanel.gameObject.SetActive(false);
             plasticPanel.gameObject.SetActive(true);
@@ -34,7 +36,7 @@ public class TutorialPanel : MonoBehaviour
         }
         if (Game.level == 3)
         {
-
+            tutorialPanel.gameObject.SetActive(false);
             GlassPanel.gameObject.SetActive(false);
             cartonPanel.gameObject.SetActive(true);
             plasticPanel.gameObject.SetActive(false);
@@ -43,7 +45,7 @@ public class TutorialPanel : MonoBehaviour
         }
         if (Game.level == 4)
         {
-
+            tutorialPanel.gameObject.SetActive(false);
             GlassPanel.gameObject.SetActive(false);
             cartonPanel.gameObject.SetActive(false);
             plasticPanel.gameObject.SetActive(false);
@@ -52,7 +54,7 @@ public class TutorialPanel : MonoBehaviour
         }
         if (Game.level == 5)
         {
-
+            tutorialPanel.gameObject.SetActive(false);
             GlassPanel.gameObject.SetActive(false);
             cartonPanel.gameObject.SetActive(false);
             plasticPanel.gameObject.SetActive(false);
@@ -89,6 +91,15 @@ public class TutorialPanel : MonoBehaviour
     public void closeGrisPanel()
     {
         gameStart = true;
+        grisPanel.gameObject.SetActive(false);
+    }
+    public void closeTutorialPanel()
+    {
+        tutorialPanel.gameObject.SetActive(false);
+        GlassPanel.gameObject.SetActive(true);
+        cartonPanel.gameObject.SetActive(false);
+        plasticPanel.gameObject.SetActive(false);
+        organicPanel.gameObject.SetActive(false);
         grisPanel.gameObject.SetActive(false);
     }
 }

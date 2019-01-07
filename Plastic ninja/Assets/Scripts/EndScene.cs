@@ -35,19 +35,19 @@ public class EndScene : MonoBehaviour {
         switch (Game.level) {
             case 1:
              GotPoints.text = "HIGSCHORE: " + points.ToString();
-                if(points >= 35) {
+                if(points >= 85) {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(true);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level1Medals", 3);
                 }
-                if (points >= 15&& points < 35) {
+                if (points >= 55 && points < 85) {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level1Medals", 2);
                 }
-                if (points < 0 && points <=15) {
+                if (points >= 25 && points < 55) {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
                     medalSilver.SetActive(false);
@@ -56,21 +56,21 @@ public class EndScene : MonoBehaviour {
                 break;
             case 2:
                 GotPoints.text = "HIGSCHORE: " + points.ToString();
-                if (points >= 35)
+                if (points >= 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(true);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level2Medals", 3);
                 }
-                if (points >= 15 && points < 35)
+                if (points >= 55 && points < 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level2Medals", 2);
                 }
-                if (points < 0 && points <= 15)
+                if (points >= 25 && points < 55)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
@@ -80,21 +80,21 @@ public class EndScene : MonoBehaviour {
                 break;
             case 3:
                 GotPoints.text = "HIGSCHORE: " + points.ToString();
-                if (points >= 35)
+                if (points >= 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(true);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level3Medals", 3);
                 }
-                if (points >= 15 && points < 35)
+                if (points >= 55 && points < 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level3Medals", 2);
                 }
-                if (points < 0 && points <= 15)
+                if (points >= 25 && points < 55)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
@@ -104,21 +104,21 @@ public class EndScene : MonoBehaviour {
                 break;
             case 4:
                 GotPoints.text = "HIGSCHORE: " + points.ToString();
-                if (points >= 35)
+                if (points >= 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(true);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level4Medals", 3);
                 }
-                if (points >= 15 && points < 35)
+                if (points >= 55 && points < 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level4Medals", 2);
                 }
-                if (points < 0 && points <= 15)
+                if (points >= 25 && points < 55)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
@@ -128,21 +128,21 @@ public class EndScene : MonoBehaviour {
                 break;
             case 5:
                 GotPoints.text = "HIGSCHORE: " + points.ToString();
-                if (points >= 35)
+                if (points >= 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(true);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level5Medals", 3);
                 }
-                if (points >= 15 && points < 35)
+                if (points >= 55 && points < 85)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
                     medalSilver.SetActive(true);
                     PlayerPrefs.SetInt("Level5Medals", 2);
                 }
-                if (points < 0 && points <= 15)
+                if (points >= 25 && points < 55)
                 {
                     medalBronze.SetActive(true);
                     medalGold.SetActive(false);
