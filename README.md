@@ -1,5 +1,6 @@
 # Recycle Serious Game
 A serious game to raise awareness and teach kids how to recycle.
+[Play it here!](https://joangm.itch.io/kids-recycle)
 
 ![](https://github.com/JoanStinson/Recycle_Serious_Game/blob/master/Recycle%20Images/01.png)
 
